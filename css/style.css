@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'Prata';
+	src: local('PrataRegular'),
+       url('/fonts/PrataRegular.woff2') format('woff2'),
+		   url('/fonts/PrataRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: local('RalewayLight'),
+       url('/fonts/RalewayLight.woff2') format('woff2'),
+		   url('/fonts/RalewayLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: local('RalewayRegular'),
+       url('/fonts/RalewayRegular.woff2') format('woff2'),
+		   url('/fonts/RalewayRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: local('RalewayMedium'),
+       url('/fonts/RalewayMedium.woff2') format('woff2'),
+		   url('/fonts/RalewayMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+  font-display: swap;
+}
+
+:root {
+	--accent-yellow-color: #faca47;
+	--accent-red-color: #ad2d11;
+  --white-color: #fff;
+  --black-color: #000;
+	--beige-bg-color: #fdfaf4;
+	--dark-bg-color: #181515;
+  --main-font-family: "Raleway", sans-serif;
+  --accent-font-family: "Prata", sans-serif;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  outline: none;
+}
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+      object-fit: cover;
+}
+body {
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
