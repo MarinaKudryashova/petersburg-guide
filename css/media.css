@@ -1,0 +1,27 @@
+@media(max-width: 1024px) {
+  .header__menu {
+    max-width: 800px;
+  }
+  .menu__list {
+    gap: 25px 30px;
+    padding: 32px 25px 25px;
+  }
+  .promo__title {
+    margin-bottom: 16px;
+    font-size: 40px;
+  }
+  .promo__descr {
+    font-size: 18px;
+  }
+}
+@media(max-width: 767px) {
+  .header__menu {
+    padding: 0;
+  }
+  .menu__list {
+    flex-direction: column;
+    padding-bottom: 0;
+    border: none;
+    gap: 25px 64px;
+  }
+}

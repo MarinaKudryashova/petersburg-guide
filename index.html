@@ -7,20 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-
-    </div>
+    <nav class="header__menu menu">
+      <ul class="menu__list list-reset">
+        <li class="menu__item"><a href="#about" class="menu__link link-reset">О&nbsp;городе</a></li>
+        <li class="menu__item"><a href="#history" class="menu__link link-reset">История</a></li>
+        <li class="menu__item"><a href="#attraction" class="menu__link link-reset">Достопримечательности</a></li>
+        <li class="menu__item"><a href="#price" class="menu__link link-reset">Бюджет поездки</a></li>
+        <li class="menu__item"><a href="#map" class="menu__link link-reset">Карта Петербурга</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="main"></main>
+  <main class="main">
+    <section class="promo">
+      <div class="promo__content">
+        <h1 class="promo__title">Путеводитель по&nbsp;Санкт-Петербургу</h1>
+        <p class="promo__descr">Рассказываем самое интересное</p>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__container container">
+        <h2 class="about__title section-title">О&nbsp;городе</h2>
+      </div>
+      <!-- слайдер -->
+      <div class="slider__container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!--         слайд -->
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__img" src="https://i.postimg.cc/7YmPcj58/about-1.jpg" alt="Петергоф">
+                <p class="swiper-slide__text margin-reset">Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых городов России, который привлекает туристов со&nbsp;всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
+              </div>
+            </div>
+            <!--         слайд -->
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__img"  src="https://i.postimg.cc/m2b2mT2y/about-2.jpg" alt="Памятник Петру 1">
+                <p class="swiper-slide__text margin-reset">Город был основан в&nbsp;1703 году Петром I&nbsp;на берегах реки Невы и&nbsp;стал символом силы и&nbsp;могущества Российской империи.</p>
+              </div>
+            </div>
+            <!--         слайд -->
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__img"  src="https://i.postimg.cc/NjFGwbXy/about-3.jpg" alt="Лайнер в порту">
+                <p class="swiper-slide__text margin-reset">Сегодня Санкт-Петербург&nbsp;&mdash; это не&nbsp;только культурный центр, но&nbsp;и&nbsp;один из&nbsp;крупнейших портов мира, который является важным экономическим центром России.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-control container">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-navigation">
+              <button class="swiper__btn swiper__btn--prev btn-reset">
+                <svg width="76" height="76">
+                  <use xlink:href="img/sprite.svg#prev"></use>
+                </svg>
+              </button>
+              <button class="swiper__btn swiper__btn--next btn-reset">
+                <svg width="76" height="76">
+                  <use xlink:href="img/sprite.svg#next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="slogan">
+      <div class="slogan__container container">
+        <p class="slogan__desr">В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых интересных местах Санкт-Петербурга, которые обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.</p>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container"></div>
   </footer>
-
+  <script src="libs/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 </html>
