@@ -19,7 +19,10 @@
     padding: 0;
   }
   .menu__list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 0;
     border: none;
     gap: 25px 64px;
