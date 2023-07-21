@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="libs/swiper-bundle.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -18,8 +17,8 @@
       <ul class="menu__list list-reset">
         <li class="menu__item"><a href="#about" class="menu__link link-reset">О&nbsp;городе</a></li>
         <li class="menu__item"><a href="#history" class="menu__link link-reset">История</a></li>
-        <li class="menu__item"><a href="#attraction" class="menu__link link-reset">Достопримечательности</a></li>
-        <li class="menu__item"><a href="#price" class="menu__link link-reset">Бюджет поездки</a></li>
+        <li class="menu__item"><a href="#attractions" class="menu__link link-reset">Достопримечательности</a></li>
+        <li class="menu__item"><a href="#budget" class="menu__link link-reset">Бюджет поездки</a></li>
         <li class="menu__item"><a href="#map" class="menu__link link-reset">Карта Петербурга</a></li>
       </ul>
     </nav>
@@ -31,7 +30,7 @@
         <p class="promo__descr">Рассказываем самое интересное</p>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="about__container container">
         <h2 class="about__title section-title">О&nbsp;городе</h2>
       </div>
@@ -42,21 +41,21 @@
             <!--         слайд -->
             <div class="swiper-slide">
               <div class="swiper-slide__content">
-                <img class="swiper-slide__img" src="https://i.postimg.cc/7YmPcj58/about-1.jpg" alt="Петергоф">
+                <img class="swiper-slide__img" src="img/about/about-1.jpg" alt="Петергоф">
                 <p class="swiper-slide__text margin-reset">Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых городов России, который привлекает туристов со&nbsp;всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
               </div>
             </div>
             <!--         слайд -->
             <div class="swiper-slide">
               <div class="swiper-slide__content">
-                <img class="swiper-slide__img"  src="https://i.postimg.cc/m2b2mT2y/about-2.jpg" alt="Памятник Петру 1">
+                <img class="swiper-slide__img"  src="img/about/about-2.jpg" alt="Памятник Петру 1">
                 <p class="swiper-slide__text margin-reset">Город был основан в&nbsp;1703 году Петром I&nbsp;на берегах реки Невы и&nbsp;стал символом силы и&nbsp;могущества Российской империи.</p>
               </div>
             </div>
             <!--         слайд -->
             <div class="swiper-slide">
               <div class="swiper-slide__content">
-                <img class="swiper-slide__img"  src="https://i.postimg.cc/NjFGwbXy/about-3.jpg" alt="Лайнер в порту">
+                <img class="swiper-slide__img"  src="img/about/about-3.jpg" alt="Лайнер в порту">
                 <p class="swiper-slide__text margin-reset">Сегодня Санкт-Петербург&nbsp;&mdash; это не&nbsp;только культурный центр, но&nbsp;и&nbsp;один из&nbsp;крупнейших портов мира, который является важным экономическим центром России.</p>
               </div>
             </div>
@@ -86,7 +85,7 @@
         <p class="slogan__desr">В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых интересных местах Санкт-Петербурга, которые обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.</p>
       </div>
     </section>
-    <section class="history">
+    <section id="history" class="history">
       <div class="container">
         <h2 class="history__title section-title">История</h2>
         <ul class="history__content list-reset">
@@ -96,7 +95,7 @@
               <span class="history__event">Основание Санкт-Петербурга Петром I</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-1.jpg" alt="Петр 1" width="150" height="150">
+              <img class="history__img" src="img/history/history-1.jpg" alt="Петр 1" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -105,7 +104,7 @@
               <span class="history__event">Санкт-Петербург становится официальной столицей России</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-2.jpg" alt="Санкт-Петербург 1712 год" width="150" height="150">
+              <img class="history__img" src="img/history/history-2.jpg" alt="Санкт-Петербург 1712 год" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -114,7 +113,7 @@
               <span class="history__event">Переименование в Петроград</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-3.jpg" alt="Петроград 1914 год" width="150" height="150">
+              <img class="history__img" src="img/history/history-3.jpg" alt="Петроград 1914 год" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -123,7 +122,7 @@
               <span class="history__event">Перенос столицы из&nbsp;Петрограда в&nbsp;Москву</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-4.jpg" alt="Москва 1918 год" width="150" height="150">
+              <img class="history__img" src="img/history/history-4.jpg" alt="Москва 1918 год" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -132,7 +131,7 @@
               <span class="history__event">Переименование Петрограда в&nbsp;Ленинград в&nbsp;честь В.И. Ленина</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-5.jpg" alt="Переименование в Ленинград" width="150" height="150">
+              <img class="history__img" src="img/history/history-5.jpg" alt="Переименование в Ленинград" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -141,7 +140,7 @@
               <span class="history__event">Блокада Ленинграда, начатая войсками Финляндии и&nbsp;Германии</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-6.jpg" alt="Блокада Ленинграда ВОВ 1" width="150" height="150">
+              <img class="history__img" src="img/history/history-6.jpg" alt="Блокада Ленинграда ВОВ 1" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -150,7 +149,7 @@
               <span class="history__event">Присвоение городу Ленинграду звания Города-героя. Ленинград&nbsp;&mdash; город-герой</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-7.jpg" alt="Медаль золотая звезда" width="150" height="150">
+              <img class="history__img" src="img/history/history-7.jpg" alt="Медаль золотая звезда" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -159,7 +158,7 @@
               <span class="history__event">Возвращение городу прежнего названия Санкт-Петербург, о&nbsp;чём был подписан Указ Президиума Верховного Совета РСФСР</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-8.png" alt="Герб СССР" width="150" height="150">
+              <img class="history__img" src="img/history/history-8.png" alt="Герб СССР" width="150" height="150">
             </div>
           </li>
           <li class="history__item">
@@ -168,52 +167,93 @@
               <span class="history__event">Рождение 5-ти миллионного жителя Санкт-Петербурга</span>
             </p>
             <div class="history__img-container">
-              <img class="history__img" src="img/history-9.jpg" alt="Новорожденный жителя Санкт-Петербурга" width="150" height="150">
+              <img class="history__img" src="img/history/history-9.jpg" alt="Новорожденный жителя Санкт-Петербурга" width="150" height="150">
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="attractions">
+    <section id="attractions" class="attractions">
       <div class="container">
-        <h2 class="section-title">Достопримечательности</h2>
+        <h2 class="attractions__title section-title">Достопримечательности</h2>
         <p class="attractions__descr section-descr">Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками. Это один из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой статье мы&nbsp;расскажем о&nbsp;самых знаменитых достопримечательностях Санкт-Петербурга.</p>
         <ul class="attractions__list list-reset">
           <li class="attractions__items card">
             <h3 class="card__title">Эрмитаж</h3>
-            <img class="card__img" src="#" alt="Эрмитаж">
+            <img class="card__img" src="img/attractions/attr-1.jpg" alt="Эрмитаж">
             <p class="card__descr">Эрмитаж&nbsp;&mdash; один из&nbsp;самых известных музеев мира, который находится в&nbsp;самом сердце Санкт-Петербурга. Это огромный музей с&nbsp;более чем 3&nbsp;миллионами экспонатов, включая произведения искусства, античные скульптуры, древние монеты и&nbsp;многое другое. Здание музея само по&nbsp;себе является достопримечательностью&nbsp;&mdash; это огромный дворец с&nbsp;белоснежными колоннами и&nbsp;золотыми украшениями.</p>
           </li>
           <li class="attractions__items card">
             <h3 class="card__title">Дворцовая площадь</h3>
-            <img class="card__img" src="#" alt="Дворцовая площадь">
+            <img class="card__img" src="img/attractions/attr-2.jpg" alt="Дворцовая площадь">
             <p class="card__descr">Дворцовая площадь&nbsp;&mdash; это центральная площадь Санкт-Петербурга, на&nbsp;которой находятся некоторые из&nbsp;самых знаменитых достопримечательностей города, такие как Зимний дворец, Эрмитаж и&nbsp;Александровский столб.
-              Площадь окружена красивыми зданиями и&nbsp;колоннами, а&nbsp;также является местом проведения различных праздников и&nbsp;мероприятий.</p>
+
+            Площадь окружена красивыми зданиями и&nbsp;колоннами, а&nbsp;также является местом проведения различных праздников и&nbsp;мероприятий.</p>
           </li>
           <li class="attractions__items card">
             <h3 class="card__title">Зимний дворец</h3>
-            <img class="card__img" src="#" alt="Зимний дворец">
+            <img class="card__img" src="img/attractions/attr-3.jpg" alt="Зимний дворец">
             <p class="card__descr">Зимний дворец&nbsp;&mdash; один из&nbsp;самых красивых и&nbsp;известных дворцов России. Он&nbsp;был построен в&nbsp;XVIII веке для императорской семьи и&nbsp;находится на&nbsp;Дворцовой площади. Сегодня в&nbsp;здании Зимнего дворца находится Эрмитаж.</p>
           </li>
           <li class="attractions__items card">
             <h3 class="card__title">Петергоф</h3>
-            <img class="card__img" src="#" alt="Петергоф">
+            <img class="card__img" src="img/attractions/attr-4.jpg" alt="Петергоф">
             <p class="card__descr">Петергоф&nbsp;&mdash; это знаменитый дворцово-парковый комплекс, расположенный на&nbsp;берегу Финского залива. Он&nbsp;был основан Петром I&nbsp;в начале XVIII века и&nbsp;является одним из&nbsp;самых красивых и&nbsp;известных достопримечательностей Санкт-Петербурга. В&nbsp;Петергофе находятся многочисленные фонтаны, скульптуры и&nbsp;дворцы.</p>
           </li>
           <li class="attractions__items card">
             <h3 class="card__title">Исаакиевский собор</h3>
-            <img class="card__img" src="#" alt="Исаакиевский собор">
+            <img class="card__img" src="img/attractions/attr-5.jpg" alt="Исаакиевский собор">
             <p class="card__descr">Исаакиевский собор&nbsp;&mdash; это один из&nbsp;самых красивых и&nbsp;величественных храмов Санкт-Петербурга. Он&nbsp;был построен в&nbsp;XIX веке и&nbsp;является одним из&nbsp;символов города. Собор украшен куполами, колоннами и&nbsp;мозаиками, а&nbsp;также является одной из&nbsp;самых высоких церквей в&nbsp;мире.</p>
           </li>
         </ul>
       </div>
     </section>
+    <section id="budget" class="budget">
+      <div class="container">
+        <h2 class="budget__title section-title">Бюджет поездки</h2>
+        <p class="budget__descr section-descr">Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам для путешествия.</p>
+        <ul class="budget__list list-reset">
+          <li class="budget-card">
+            <h3 class="budget-card__title">Проживание</h3>
+            <span class="budget-card__price">от 2000 ₽</span>
+          </li>
+          <li class="budget-card">
+            <h3 class="budget-card__title">Средний чек в ресторане</h3>
+            <span class="budget-card__price">1300 ₽</span>
+          </li>
+          <li class="budget-card">
+            <h3 class="budget-card__title">Экскурсии</h3>
+            <span class="budget-card__price">от 1000 ₽</span>
+          </li>
+          <li class="budget-card">
+            <h3 class="budget-card__title">Сувениры</h3>
+            <span class="budget-card__price">от 300 ₽</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="map" class="map">
+      <div class="container">
+        <h2 class="map__title section-title">Карта Петербурга</h2>
+      </div>
+      <div id="map__block" class="map__block"></div>
+    </section>
   </main>
   <footer class="footer">
-    <div class="container"></div>
+    <div class="container">
+      <ul class="footer__nav list-reset">
+        <li class="footer__item"><a href="#about" class="footer__link link-reset">О городе</a></li>
+        <li class="footer__item"><a href="#history" class="footer__link link-reset">История</a></li>
+        <li class="footer__item"><a href="#attractions" class="footer__link link-reset">Достопримечательности</a></li>
+        <li class="footer__item"><a href="#budget" class="footer__link link-reset">Бюджет поездки</a></li>
+        <li class="footer__item"><a href="#map" class="footer__link link-reset">Карта Петербурга</a></li>
+      </ul>
+      <span class="footer__copy">© 2023</span>
+      <a class="link__policy link-reset" href="#" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
+    </div>
   </footer>
   <script src="libs/swiper-bundle.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
