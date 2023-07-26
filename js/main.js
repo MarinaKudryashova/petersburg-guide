@@ -66,7 +66,6 @@ ymaps.ready(init);
   }
 
 // иницилизация библиотеки анимаций WOW.js
-// new WOW().init();
 let wow = new WOW(
   {
     boxClass:     'wow',      // animated element css class (default is wow)
