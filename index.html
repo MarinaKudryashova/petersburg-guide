@@ -8,12 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <header class="header">
-    <nav class="header__menu menu">
+    <nav class="header__menu menu wow fadeInDown" data-wow-duration="3s">
       <ul class="menu__list list-reset">
         <li class="menu__item"><a href="#about" class="menu__link link-reset">О&nbsp;городе</a></li>
         <li class="menu__item"><a href="#history" class="menu__link link-reset">История</a></li>
@@ -26,13 +27,13 @@
   <main class="main">
     <section class="promo">
       <div class="promo__content">
-        <h1 class="promo__title">Путеводитель по&nbsp;Санкт-Петербургу</h1>
-        <p class="promo__descr">Рассказываем самое интересное</p>
+        <h1 class="promo__title wow fadeInUp" data-wow-duration="2s">Путеводитель по&nbsp;Санкт-Петербургу</h1>
+        <p class="promo__descr wow fadeInUp"  data-wow-duration="2s" data-wow-delay="1s">Рассказываем самое интересное</p>
       </div>
     </section>
     <section id="about" class="about">
       <div class="about__container container">
-        <h2 class="about__title section-title">О&nbsp;городе</h2>
+        <h2 class="about__title section-title wow fadeInLeft" data-wow-delay="1s">О&nbsp;городе</h2>
       </div>
       <!-- слайдер -->
       <div class="about__slider">
@@ -40,7 +41,7 @@
           <div class="swiper-wrapper">
             <!--         слайд -->
             <div class="swiper-slide">
-              <div class="swiper-slide__content">
+              <div class="swiper-slide__content wow fadeInUp"  data-wow-duration="2s" data-wow-delay="1s">
                 <img class="swiper-slide__img" src="img/about/about-1.jpg" alt="Петергоф">
                 <p class="swiper-slide__text margin-reset">Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых городов России, который привлекает туристов со&nbsp;всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
               </div>
@@ -62,14 +63,14 @@
           </div>
 
           <div class="swiper-control container">
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"></div>
             <div class="swiper-navigation">
-              <button class="swiper__btn swiper__btn--prev btn-reset">
+              <button class="swiper__btn swiper__btn--prev btn-reset  wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
                 <svg width="76" height="76">
                   <use xlink:href="img/sprite.svg#prev"></use>
                 </svg>
               </button>
-              <button class="swiper__btn swiper__btn--next btn-reset">
+              <button class="swiper__btn swiper__btn--next btn-reset  wow fadeIn"  data-wow-duration="2s" data-wow-delay="1.2s">
                 <svg width="76" height="76">
                   <use xlink:href="img/sprite.svg#next"></use>
                 </svg>
@@ -82,14 +83,16 @@
     </section>
     <div class="slogan">
       <div class="container">
-        <p class="slogan__desr">В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых интересных местах Санкт-Петербурга, которые обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.</p>
+        <div class="slogan__container wow fadeIn"   data-wow-duration="2s" data-wow-delay="1s">
+          <p class="slogan__desr wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1.5s">В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых интересных местах Санкт-Петербурга, которые обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.</p>
+        </div>
       </div>
     </div>
     <section id="history" class="history">
       <div class="container">
         <h2 class="history__title section-title">История</h2>
         <ul class="history__content list-reset">
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">16 (27 по новому стилю) мая 1703 года </span>
               <span class="history__event">Основание Санкт-Петербурга Петром I</span>
@@ -98,7 +101,7 @@
               <img class="history__img" src="img/history/history-1.jpg" alt="Петр 1" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">21 мая 1712 года</span>
               <span class="history__event">Санкт-Петербург становится официальной столицей России</span>
@@ -107,7 +110,7 @@
               <img class="history__img" src="img/history/history-2.jpg" alt="Санкт-Петербург 1712 год" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">1914 год</span>
               <span class="history__event">Переименование в Петроград</span>
@@ -116,7 +119,7 @@
               <img class="history__img" src="img/history/history-3.jpg" alt="Петроград 1914 год" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">1918 год</span>
               <span class="history__event">Перенос столицы из&nbsp;Петрограда в&nbsp;Москву</span>
@@ -125,7 +128,7 @@
               <img class="history__img" src="img/history/history-4.jpg" alt="Москва 1918 год" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">26&nbsp;января 1924 года</span>
               <span class="history__event">Переименование Петрограда в&nbsp;Ленинград в&nbsp;честь В.И. Ленина</span>
@@ -134,7 +137,7 @@
               <img class="history__img" src="img/history/history-5.jpg" alt="Переименование в Ленинград" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">8 сентября 1941 — 27&nbsp;января 1944 гг</span>
               <span class="history__event">Блокада Ленинграда, начатая войсками Финляндии и&nbsp;Германии</span>
@@ -143,7 +146,7 @@
               <img class="history__img" src="img/history/history-6.jpg" alt="Блокада Ленинграда ВОВ 1" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">8&nbsp;мая 1965 года</span>
               <span class="history__event">Присвоение городу Ленинграду звания Города-героя. Ленинград&nbsp;&mdash; город-герой</span>
@@ -152,7 +155,7 @@
               <img class="history__img" src="img/history/history-7.jpg" alt="Медаль золотая звезда" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">6&nbsp;сентября 1991 года</span>
               <span class="history__event">Возвращение городу прежнего названия Санкт-Петербург, о&nbsp;чём был подписан Указ Президиума Верховного Совета РСФСР</span>
@@ -161,7 +164,7 @@
               <img class="history__img" src="img/history/history-8.png" alt="Герб СССР" width="150" height="150">
             </div>
           </li>
-          <li class="history__item">
+          <li class="history__item wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
             <p class="history__descr">
               <span class="history__time">22&nbsp;сентября 2012 года</span>
               <span class="history__event">Рождение 5-ти миллионного жителя Санкт-Петербурга</span>
@@ -175,32 +178,32 @@
     </section>
     <section id="attractions" class="attractions">
       <div class="container">
-        <h2 class="attractions__title section-title">Достопримечательности</h2>
-        <p class="attractions__descr section-descr">Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками. Это один из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой статье мы&nbsp;расскажем о&nbsp;самых знаменитых достопримечательностях Санкт-Петербурга.</p>
+        <h2 class="attractions__title section-title wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">Достопримечательности</h2>
+        <p class="attractions__descr section-descr wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.5s">Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками. Это один из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой статье мы&nbsp;расскажем о&nbsp;самых знаменитых достопримечательностях Санкт-Петербурга.</p>
         <ul class="attractions__list list-reset">
-          <li class="attractions__items card">
+          <li class="attractions__items card wow slideInLeft" data-wow-duration="2s" data-wow-delay="1.5s">
             <h3 class="card__title">Эрмитаж</h3>
             <img class="card__img" src="img/attractions/attr-1.jpg" alt="Эрмитаж">
             <p class="card__descr">Эрмитаж&nbsp;&mdash; один из&nbsp;самых известных музеев мира, который находится в&nbsp;самом сердце Санкт-Петербурга. Это огромный музей с&nbsp;более чем 3&nbsp;миллионами экспонатов, включая произведения искусства, античные скульптуры, древние монеты и&nbsp;многое другое. Здание музея само по&nbsp;себе является достопримечательностью&nbsp;&mdash; это огромный дворец с&nbsp;белоснежными колоннами и&nbsp;золотыми украшениями.</p>
           </li>
-          <li class="attractions__items card">
+          <li class="attractions__items card wow slideInRight" data-wow-duration="2s" data-wow-delay="1.5s">
             <h3 class="card__title">Дворцовая площадь</h3>
             <img class="card__img" src="img/attractions/attr-2.jpg" alt="Дворцовая площадь">
             <p class="card__descr">Дворцовая площадь&nbsp;&mdash; это центральная площадь Санкт-Петербурга, на&nbsp;которой находятся некоторые из&nbsp;самых знаменитых достопримечательностей города, такие как Зимний дворец, Эрмитаж и&nbsp;Александровский столб.
 
             Площадь окружена красивыми зданиями и&nbsp;колоннами, а&nbsp;также является местом проведения различных праздников и&nbsp;мероприятий.</p>
           </li>
-          <li class="attractions__items card">
+          <li class="attractions__items card wow slideInLeft" data-wow-duration="2s" data-wow-delay="1.5s">
             <h3 class="card__title">Зимний дворец</h3>
             <img class="card__img" src="img/attractions/attr-3.jpg" alt="Зимний дворец">
             <p class="card__descr">Зимний дворец&nbsp;&mdash; один из&nbsp;самых красивых и&nbsp;известных дворцов России. Он&nbsp;был построен в&nbsp;XVIII веке для императорской семьи и&nbsp;находится на&nbsp;Дворцовой площади. Сегодня в&nbsp;здании Зимнего дворца находится Эрмитаж.</p>
           </li>
-          <li class="attractions__items card">
+          <li class="attractions__items card wow slideInRight" data-wow-duration="2s" data-wow-delay="1.5s">
             <h3 class="card__title">Петергоф</h3>
             <img class="card__img" src="img/attractions/attr-4.jpg" alt="Петергоф">
             <p class="card__descr">Петергоф&nbsp;&mdash; это знаменитый дворцово-парковый комплекс, расположенный на&nbsp;берегу Финского залива. Он&nbsp;был основан Петром I&nbsp;в начале XVIII века и&nbsp;является одним из&nbsp;самых красивых и&nbsp;известных достопримечательностей Санкт-Петербурга. В&nbsp;Петергофе находятся многочисленные фонтаны, скульптуры и&nbsp;дворцы.</p>
           </li>
-          <li class="attractions__items card">
+          <li class="attractions__items card wow slideInLeft" data-wow-duration="2s" data-wow-delay="1.5s">
             <h3 class="card__title">Исаакиевский собор</h3>
             <img class="card__img" src="img/attractions/attr-5.jpg" alt="Исаакиевский собор">
             <p class="card__descr">Исаакиевский собор&nbsp;&mdash; это один из&nbsp;самых красивых и&nbsp;величественных храмов Санкт-Петербурга. Он&nbsp;был построен в&nbsp;XIX веке и&nbsp;является одним из&nbsp;символов города. Собор украшен куполами, колоннами и&nbsp;мозаиками, а&nbsp;также является одной из&nbsp;самых высоких церквей в&nbsp;мире.</p>
@@ -210,22 +213,22 @@
     </section>
     <section id="budget" class="budget">
       <div class="container">
-        <h2 class="budget__title section-title">Бюджет поездки</h2>
-        <p class="budget__descr section-descr">Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам для путешествия.</p>
+        <h2 class="budget__title section-title wow fadeInLeft">Бюджет поездки</h2>
+        <p class="budget__descr section-descr wow fadeInRight">Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам для путешествия.</p>
         <ul class="budget__list list-reset">
-          <li class="budget-card">
+          <li class="budget-card wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
             <h3 class="budget-card__title">Проживание</h3>
             <span class="budget-card__price">от 2000 ₽</span>
           </li>
-          <li class="budget-card">
+          <li class="budget-card wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
             <h3 class="budget-card__title">Средний чек в ресторане</h3>
             <span class="budget-card__price">1300 ₽</span>
           </li>
-          <li class="budget-card">
+          <li class="budget-card wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.4s">
             <h3 class="budget-card__title">Экскурсии</h3>
             <span class="budget-card__price">от 1000 ₽</span>
           </li>
-          <li class="budget-card">
+          <li class="budget-card wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.6s">
             <h3 class="budget-card__title">Сувениры</h3>
             <span class="budget-card__price">от 300 ₽</span>
           </li>
@@ -234,9 +237,9 @@
     </section>
     <section id="map" class="map">
       <div class="container">
-        <h2 class="map__title section-title">Карта Петербурга</h2>
+        <h2 class="map__title section-title wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">Карта Петербурга</h2>
       </div>
-      <div id="map__block" class="map__block"></div>
+      <div id="map__block" class="map__block wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s"></div>
     </section>
   </main>
   <footer class="footer">
@@ -254,6 +257,7 @@
   </footer>
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="libs/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
